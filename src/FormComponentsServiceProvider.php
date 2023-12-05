@@ -2,9 +2,9 @@
 
 namespace schruptor\FormComponents;
 
+use schruptor\FormComponents\Commands\FormComponentsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use schruptor\FormComponents\Commands\FormComponentsCommand;
 
 class FormComponentsServiceProvider extends PackageServiceProvider
 {
