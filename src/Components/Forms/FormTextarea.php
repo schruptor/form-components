@@ -2,9 +2,8 @@
 
 namespace schruptor\FormComponents\Components\Forms;
 
-use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
-use function schruptor\FormComponents\Components\Forms\view;
+use Illuminate\View\Component;
 
 class FormTextarea extends Component
 {
