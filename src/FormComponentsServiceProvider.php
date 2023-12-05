@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace schruptor\FormComponents;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use schruptor\FormComponents\Commands\FormComponentsCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class FormComponentsServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('form-components')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_form-components_table')
+            ->hasCommand(FormComponentsCommand::class);
     }
 }

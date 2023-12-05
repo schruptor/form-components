@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace schruptor\FormComponents\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FormComponentsCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'form-components';
 
     public $description = 'My command';
 
