@@ -5,13 +5,13 @@ namespace schruptor\FormComponents;
 use Illuminate\View\Component;
 use schruptor\FormComponents\Exceptions\FrameworkNotAvailable;
 
-abstract class FormComponents extends  Component
+abstract class FormComponents extends Component
 {
     const DEFAULT_FRAMEWORK = 'bootstrap';
 
     const AVAILABLE_FRAMEWORKS = [
         'tailwind',
-        'bootstrap'
+        'bootstrap',
     ];
 
     public ?string $framework = null;

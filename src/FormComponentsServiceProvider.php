@@ -3,7 +3,6 @@
 namespace schruptor\FormComponents;
 
 use Illuminate\Support\Facades\Blade;
-use schruptor\FormComponents\Commands\FormComponentsCommand;
 use schruptor\FormComponents\Components\Bootstrap\Forms\FormGroup;
 use schruptor\FormComponents\Components\Bootstrap\Forms\FormInput;
 use schruptor\FormComponents\Components\Bootstrap\Forms\FormRow;

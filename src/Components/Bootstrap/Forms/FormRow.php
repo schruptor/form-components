@@ -9,6 +9,6 @@ class FormRow extends FormComponents
 {
     public function render(): View
     {
-        return view('form-components::components.' . $this->getFramework() . '.forms.form-row');
+        return view('form-components::components.'.$this->getFramework().'.forms.form-row');
     }
 }

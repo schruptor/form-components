@@ -15,6 +15,6 @@ class FormTextarea extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.' . $this->getFramework() . '.forms.form-textarea');
+        return view('form-components::components.'.$this->getFramework().'.forms.form-textarea');
     }
 }

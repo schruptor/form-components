@@ -2,7 +2,6 @@
 
 namespace schruptor\FormComponents\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use schruptor\FormComponents\FormComponentsServiceProvider;
 use Spatie\Snapshots\MatchesSnapshots;
@@ -32,12 +31,12 @@ class TestCase extends Orchestra
         "\r",
         "\r\n",
         "\n",
-        "    "
+        '    ',
     ];
 
     protected function getSnapshotDirectory(): string
     {
-        return __DIR__ . DIRECTORY_SEPARATOR. '__snapshots__';
+        return __DIR__.DIRECTORY_SEPARATOR.'__snapshots__';
     }
 
     public function assertComponentSnapshot(string $class, array $componentParameters = [], array $componentAttributes = [], string $slot = ''): void

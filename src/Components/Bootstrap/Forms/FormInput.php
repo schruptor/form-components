@@ -17,6 +17,6 @@ class FormInput extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.' . $this->getFramework() . '.forms.form-input');
+        return view('form-components::components.'.$this->getFramework().'.forms.form-input');
     }
 }

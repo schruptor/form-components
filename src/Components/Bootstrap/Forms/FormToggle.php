@@ -14,6 +14,6 @@ class FormToggle extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.' . $this->getFramework() . '.forms.form-toggle');
+        return view('form-components::components.'.$this->getFramework().'.forms.form-toggle');
     }
 }

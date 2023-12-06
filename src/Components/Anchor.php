@@ -9,7 +9,8 @@ class Anchor extends FormComponents
 {
     public function __construct(
         public string $link
-    ){}
+    ) {
+    }
 
     public function render(): View
     {
