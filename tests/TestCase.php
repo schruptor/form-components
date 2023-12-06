@@ -5,16 +5,15 @@ namespace schruptor\FormComponents\Tests;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use schruptor\FormComponents\FormComponentsServiceProvider;
+use Spatie\Snapshots\MatchesSnapshots;
 
 class TestCase extends Orchestra
 {
+    use MatchesSnapshots;
+
     protected function setUp(): void
     {
         parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'schruptor\\FormComponents\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
     }
 
     protected function getPackageProviders($app)
@@ -27,10 +26,27 @@ class TestCase extends Orchestra
     public function getEnvironmentSetUp($app)
     {
         config()->set('database.default', 'testing');
+    }
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_form-components_table.php.stub';
-        $migration->up();
-        */
+    private array $escapeCharacters = [
+        "\r",
+        "\r\n",
+        "\n",
+        "    "
+    ];
+
+    protected function getSnapshotDirectory(): string
+    {
+        return __DIR__ . DIRECTORY_SEPARATOR. '__snapshots__';
+    }
+
+    public function assertComponentSnapshot(string $class, array $componentParameters = [], array $componentAttributes = [], string $slot = ''): void
+    {
+        $component = resolve($class, $componentParameters);
+        $component->withAttributes($componentAttributes);
+
+        $view = $component->resolveView();
+        $view->with(array_merge($component->data(), ['slot' => $slot]));
+        $this->assertMatchesSnapshot($view->render());
     }
 }
