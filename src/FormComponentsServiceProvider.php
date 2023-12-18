@@ -24,7 +24,6 @@ class FormComponentsServiceProvider extends PackageServiceProvider
     private function registerComponents()
     {
         Blade::component('form-group', FormGroup::class);
-
         Blade::component('form-row', FormRow::class);
         Blade::component('form-input', FormInput::class);
         Blade::component('form-textarea', FormTextarea::class);
