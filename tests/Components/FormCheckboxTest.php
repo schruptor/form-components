@@ -1,8 +1,8 @@
 <?php
 
-use schruptor\FormComponents\Components\Tailwind\Forms\FormCheckbox;
+use schruptor\FormComponents\Components\Forms\FormCheckbox;
 
-test('a tailwind checkbox can be rendered', function () {
+test('a checkbox can be rendered', function () {
     $this->assertComponentSnapshot(
         class: FormCheckbox::class,
         componentParameters: ['name' => 'Checkbox test', 'value' => 'Checkbox test'],

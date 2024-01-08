@@ -1,6 +1,6 @@
 <?php
 
-namespace schruptor\FormComponents\Components\Tailwind\Forms;
+namespace schruptor\FormComponents\Components\Forms;
 
 use Illuminate\Contracts\View\View;
 use schruptor\FormComponents\FormComponents;

@@ -1,6 +1,6 @@
 <?php
 
-use schruptor\FormComponents\Components\Bootstrap\Forms\FormGroup;
+use schruptor\FormComponents\Components\Forms\FormGroup;
 use schruptor\FormComponents\Exceptions\FrameworkNotAvailable;
 
 test('when a wrong framework is given, an exception is thrown', function () {

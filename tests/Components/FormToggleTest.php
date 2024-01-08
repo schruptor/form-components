@@ -1,6 +1,6 @@
 <?php
 
-use schruptor\FormComponents\Components\Bootstrap\Forms\FormToggle;
+use schruptor\FormComponents\Components\Forms\FormToggle;
 
 test('a toggle can be rendered', function () {
     $this->assertComponentSnapshot(

@@ -1,6 +1,6 @@
 <?php
 
-use schruptor\FormComponents\Components\Bootstrap\Forms\FormRow;
+use schruptor\FormComponents\Components\Forms\FormRow;
 
 test('a row group can be rendered', function () {
     $this->assertComponentSnapshot(

@@ -1,8 +1,8 @@
 <?php
 
-use schruptor\FormComponents\Components\Tailwind\Forms\FormInput;
+use schruptor\FormComponents\Components\Forms\FormInput;
 
-test('a tailwind input can be rendered', function () {
+test('an input can be rendered', function () {
     $this->assertComponentSnapshot(
         class: FormInput::class,
         componentParameters: ['name' => 'Input test', 'value' => 'Input test value'],
