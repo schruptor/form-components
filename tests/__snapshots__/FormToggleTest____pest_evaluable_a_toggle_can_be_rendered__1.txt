@@ -1,0 +1,4 @@
+<label class="position-relative checkbox-label" style="line-height:15px;">
+    <input type="checkbox" id="active" name="active" class="checkbox-slider slider-icon yesno colored-success" data-on="defaults.yes" checked data-off="defaults.no">
+    <span class="text"></span>
+</label>
