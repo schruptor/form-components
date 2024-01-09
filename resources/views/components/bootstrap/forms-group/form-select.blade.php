@@ -1,4 +1,6 @@
 <div class="form-group">
+    <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" />
+
     <select
         name="{{ $name }}"
 
@@ -11,10 +13,10 @@
         @endif
 
         @if($label && !$attributes->get('id'))
-            id="{{ $name }}"
+            id="{{ $id() }}"
         @endif
 
-        {!! $attributes->merge(['class' => 'form-control ']) !!}>
+        {!! $attributes->merge(['class' => 'form-control ' . ($hasError($name) ? 'is-invalid' : '')]) !!}>
 
         @if($placeholder)
             <option value="" disabled @if($nothingSelected()) selected="selected" @endif>
@@ -30,5 +32,10 @@
             {!! $slot !!}
         @endforelse
     </select>
+
     {!! $help ?? null !!}
+
+    @if($hasErrorAndShow($name))
+        <x-form-errors :name="$name" />
+    @endif
 </div>

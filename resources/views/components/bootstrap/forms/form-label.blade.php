@@ -1,3 +1,2 @@
-@if($label)
-    <label {!! $attributes !!}>{{ $label }}</label>
-@endif
+<label {!! $attributes !!}>{{ $label }}</label>
+

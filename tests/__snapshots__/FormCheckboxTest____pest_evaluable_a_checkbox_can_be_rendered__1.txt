@@ -1,0 +1,9 @@
+<div class="form-check">
+    <input class="form-check-input"
+           type="checkbox"
+           value="1"
+           name="Checkbox test"
+           id="Checkbox test"
+
+               />
+</div>

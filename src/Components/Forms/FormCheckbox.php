@@ -10,6 +10,7 @@ class FormCheckbox extends FormComponents
     public function __construct(
         public bool $value,
         public string $name,
+        public bool $checked = false,
         public string $label = ' '
     ) {
     }

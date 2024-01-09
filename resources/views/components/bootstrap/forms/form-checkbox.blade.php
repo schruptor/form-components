@@ -1,23 +1,12 @@
 <div class="form-check">
-    <input {!! $attributes->merge(['class' => 'form-check-input ' . ($hasError($name) ? 'is-invalid' : '')]) !!}
+    <input {!! $attributes->merge(['class' => 'form-check-input']) !!}
            type="checkbox"
            value="{{ $value }}"
            name="{{ $name }}"
-
-           @if($label && !$attributes->get('id'))
-               id="{{ $id() }}"
-           @endif
+           id="{{ $name }}"
 
            @if($checked)
                checked="checked"
-        @endif
+           @endif
     />
-
-    <x-form-label :label="$label" :for="$attributes->get('id') ?: $id()" class="form-check-label" />
-
-    {!! $help ?? null !!}
-
-    @if($hasErrorAndShow($name))
-        <x-form-errors :name="$name" />
-    @endif
 </div>

@@ -1,5 +1,7 @@
 <div class="mt-4">
     <label class="block">
+        <x-form-label :label="$label" />
+
         <select
             name="{{ $name }}"
             @if($multiple)
@@ -25,4 +27,8 @@
             @endforelse
         </select>
     </label>
+
+    @if($hasErrorAndShow($name))
+        <x-form-errors :name="$name" />
+    @endif
 </div>

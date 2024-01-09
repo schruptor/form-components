@@ -6,4 +6,8 @@
             {!! $attributes->merge(['class' => 'form-textarea block w-full ' . ($label ? 'mt-1' : '')]) !!}
         ></textarea>
     </label>
+
+    @if($hasErrorAndShow($name))
+        <x-form-errors :name="$name" />
+    @endif
 </div>

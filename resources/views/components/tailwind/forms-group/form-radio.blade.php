@@ -11,4 +11,8 @@
         />
         <span class="ml-2">{{ $label }}</span>
     </label>
+
+    @if($hasErrorAndShow($name))
+        <x-form-errors :name="$name" />
+    @endif
 </div>
