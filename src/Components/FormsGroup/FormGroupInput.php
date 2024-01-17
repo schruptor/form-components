@@ -17,6 +17,7 @@ class FormGroupInput extends FormComponents
         public bool $required = false,
     ) {
     }
+
     public function render(): View
     {
         return view('form-components::components.'.$this->getFramework().'.forms-group.form');
