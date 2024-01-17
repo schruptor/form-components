@@ -3,8 +3,11 @@
         <input {!! $attributes->merge(['class' => 'block w-full']) !!}
                value="{{ $value }}"
                name="{{ $name }}"
-               required="{{ $required }}"
                id="{{ $name }}"
+               @if($required)
+                   required
+               @endif
+               placeholder="{{ $placeholder }}"
         />
     </label>
 </div>

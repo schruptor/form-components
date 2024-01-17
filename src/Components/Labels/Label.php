@@ -1,11 +1,11 @@
 <?php
 
-namespace schruptor\FormComponents\Components\FormsGroup;
+namespace schruptor\FormComponents\Components\Labels;
 
 use Illuminate\Contracts\View\View;
 use schruptor\FormComponents\FormComponents;
 
-class FormLabel extends FormComponents
+class Label extends FormComponents
 {
     public function __construct(
         public string $label,
@@ -14,6 +14,6 @@ class FormLabel extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.'.$this->getFramework().'.forms-group.form-label');
+        return view('form-components::components.'.$this->getFramework().'.forms.form-label');
     }
 }

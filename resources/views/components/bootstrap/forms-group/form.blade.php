@@ -1,3 +1,4 @@
-<form method="POST" {!! $attributes !!}>
-    {!! $slot !!}
+<form {{ $attributes }} >
+    {{ csrf_field() }}
+    {{ $slot }}
 </form>

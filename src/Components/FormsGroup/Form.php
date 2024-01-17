@@ -7,6 +7,10 @@ use schruptor\FormComponents\FormComponents;
 
 class Form extends FormComponents
 {
+    public function __construct(
+        public bool $delete = false,
+    ) {
+    }
     public function render(): View
     {
         return view('form-components::components.'.$this->getFramework().'.forms-group.form');

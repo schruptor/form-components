@@ -1,6 +1,11 @@
-<input id="{{ $name }}"
-       required="{{ $required }}"
-       type="text" {{ $attributes->merge(['class' => 'form-control']) }}
-       name="{{ $name }}"
-       value="{{ $value }}"
-/>
+<input
+    id="{{ $name }}"
+    type="{{ $type }}"
+    name="{{ $name }}"
+    value="{{ $value }}"
+    placeholder="{{ $placeholder }}"
+    @if($required)
+        required
+    @endif
+    {{ $attributes->merge(['class' => 'form-control']) }}
+>

@@ -1,3 +1,3 @@
-<form method="POST" {!! $attributes !!}>
+<form method="{{ $method }}" action="{{ $url }}" {!! $attributes !!}>
     {!! $slot !!}
 </form>
