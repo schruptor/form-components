@@ -8,14 +8,14 @@ use schruptor\FormComponents\FormComponents;
 class FormGroupInput extends FormComponents
 {
     public function __construct(
-        public string  $groupName,
-        public string  $label,
-        public string  $name,
-        public string  $type,
-        public string  $placeholder,
-        public ?string  $value = '',
+        public string $groupName,
+        public string $label,
+        public string $name,
+        public string $type,
+        public string $placeholder,
+        public ?string $value = '',
         public ?string $framework = null,
-        public bool    $required = false,
+        public bool $required = false,
     ) {
     }
 
