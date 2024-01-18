@@ -11,7 +11,8 @@ class FormRadio extends FormComponents
         public string $name,
         public string $label,
         public $value,
-        public bool $checked = false
+        public bool $checked = false,
+        public ?string $framework = null
     ) {
     }
 

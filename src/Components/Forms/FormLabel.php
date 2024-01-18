@@ -9,6 +9,7 @@ class FormLabel extends FormComponents
 {
     public function __construct(
         public string $label,
+        public ?string $framework = null
     ) {
     }
 

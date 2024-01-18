@@ -9,6 +9,7 @@ class FormToggle extends FormComponents
 {
     public function __construct(
         public bool $value,
+        public ?string $framework = null
     ) {
     }
 

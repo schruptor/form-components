@@ -16,6 +16,7 @@ class FormSelect extends FormComponents
         public bool $multiple,
         public bool $floating,
         public string $placeholder,
+        public ?string $framework = null
     ) {
     }
 

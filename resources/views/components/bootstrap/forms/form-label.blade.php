@@ -1,1 +1,1 @@
-<p {!! $attributes !!}>{{ $label }}</p>
+<label{!! $attributes !!}>{{ $label }}</label>

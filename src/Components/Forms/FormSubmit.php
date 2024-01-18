@@ -7,6 +7,10 @@ use schruptor\FormComponents\FormComponents;
 
 class FormSubmit extends FormComponents
 {
+    public function __construct(
+        public ?string $framework = null
+    ) {
+    }
     public function render(): View
     {
         return view('form-components::components.'.$this->getFramework().'.forms.form-submit');

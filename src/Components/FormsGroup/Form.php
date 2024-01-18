@@ -9,6 +9,7 @@ class Form extends FormComponents
 {
     public function __construct(
         public bool $delete = false,
+        public ?string $framework = null
     ) {
     }
 

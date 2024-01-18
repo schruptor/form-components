@@ -9,11 +9,12 @@ class Label extends FormComponents
 {
     public function __construct(
         public string $label,
+        public ?string $framework = null
     ) {
     }
 
     public function render(): View
     {
-        return view('form-components::components.'.$this->getFramework().'.forms.form-label');
+        return view('form-components::components.'.$this->getFramework().'.labels.label');
     }
 }
