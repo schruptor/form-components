@@ -17,6 +17,7 @@ use schruptor\FormComponents\Components\Forms\FormTextarea;
 use schruptor\FormComponents\Components\Forms\FormToggle;
 use schruptor\FormComponents\Components\FormsGroup\Form;
 use schruptor\FormComponents\Components\FormsGroup\FormGroupInput;
+use schruptor\FormComponents\Components\FormsGroup\SelectDropdown;
 use schruptor\FormComponents\Components\Labels\Label;
 use schruptor\FormComponents\Components\Widgets\Card;
 use schruptor\FormComponents\Components\Widgets\DefaultHeader;
@@ -53,6 +54,7 @@ class FormComponentsServiceProvider extends PackageServiceProvider
 
         Blade::component('group-form', Form::class);
         Blade::component('forms-group-input', FormGroupInput::class);
+        Blade::component('form-select-dropdown', SelectDropdown::class);
 
         Blade::component('btn-a-link', ALinkBtn::class);
 
