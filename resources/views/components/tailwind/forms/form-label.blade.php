@@ -1,2 +1,2 @@
-<span {!! $attributes->merge(['class' => 'text-black']) !!}>{{ $label }}</span>
+<label {!! $attributes->merge(['class' => 'text-black']) !!}>{{ $label }}</label>
 

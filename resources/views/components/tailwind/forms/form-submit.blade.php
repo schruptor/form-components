@@ -1,8 +1,7 @@
-<div class="mt-6 flex items-center justify-between">
-    <button {!! $attributes->merge([
-        'class' => 'text-black py-2 px-4 rounded focus:outline-none focus:shadow-outline',
+<button
+    {!! $attributes->merge([
+        'class' => 'border rounded pt-2 pb-2 w-full',
         'type' => 'submit'
     ]) !!}>
-        {!! trim($slot) ?: __('Submit') !!}
-    </button>
-</div>
+        {{ $slot }}
+</button>
