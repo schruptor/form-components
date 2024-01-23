@@ -4,6 +4,7 @@ namespace schruptor\FormComponents;
 
 use Illuminate\Support\Facades\Blade;
 use schruptor\FormComponents\Components\Badges\Badge;
+use schruptor\FormComponents\Components\Badges\TableBadge;
 use schruptor\FormComponents\Components\Buttons\ALinkBtn;
 use schruptor\FormComponents\Components\Forms\FormCheckbox;
 use schruptor\FormComponents\Components\Forms\FormGroup;
@@ -19,6 +20,8 @@ use schruptor\FormComponents\Components\FormsGroup\Form;
 use schruptor\FormComponents\Components\FormsGroup\FormGroupInput;
 use schruptor\FormComponents\Components\FormsGroup\SelectDropdown;
 use schruptor\FormComponents\Components\Labels\Label;
+use schruptor\FormComponents\Components\Tables\Partials\TableHeader;
+use schruptor\FormComponents\Components\Tables\Partials\TdElement;
 use schruptor\FormComponents\Components\Widgets\Card;
 use schruptor\FormComponents\Components\Widgets\DefaultHeader;
 use Spatie\LaravelPackageTools\Package;
@@ -64,6 +67,10 @@ class FormComponentsServiceProvider extends PackageServiceProvider
         Blade::component('widget-card', Card::class);
 
         Blade::component('default-badge', Badge::class);
+        Blade::component('table-badge', TableBadge::class);
+
+        Blade::component('partials-table-header', TableHeader::class);
+        Blade::component('partials-td-element', TdElement::class);
 
     }
 }
