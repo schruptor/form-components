@@ -1,4 +1,4 @@
-<table id="{{ $id }}"{{ $attributes->merge(['class' => 'cart table table-bordered table-hover']) }}>
+<table id="{{ $id }}" {{ $attributes->merge(['class' => 'cart table table-bordered table-hover']) }}>
     <thead>
         <tr>
             {{ $slot }}
