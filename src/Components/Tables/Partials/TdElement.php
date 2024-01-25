@@ -8,7 +8,6 @@ use schruptor\FormComponents\FormComponents;
 class TdElement extends FormComponents
 {
     public function __construct(
-        public string $text,
         public ?string $framework = null
     ) {
     }

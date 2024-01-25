@@ -1,1 +1,3 @@
-<td {{ $attributes->merge(['class' => '']) }}>{{ $text }}</td>
+<td {{ $attributes->merge(['class' => '']) }}>
+    {{ $slot }}
+</td>

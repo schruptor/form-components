@@ -8,11 +8,11 @@ use schruptor\FormComponents\FormComponents;
 class FormInput extends FormComponents
 {
     public function __construct(
-        public string $name,
-        public string $value,
         public string $type,
-        public string $placeholder,
         public bool $required = false,
+        public ?string $placeholder = '',
+        public ?string $name = '',
+        public ?string $value = '',
         public ?string $framework = null,
     ) {
     }

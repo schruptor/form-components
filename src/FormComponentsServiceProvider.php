@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use schruptor\FormComponents\Components\Badges\Badge;
 use schruptor\FormComponents\Components\Badges\TableBadge;
 use schruptor\FormComponents\Components\Buttons\ALinkBtn;
+use schruptor\FormComponents\Components\Buttons\RoundedBtn;
 use schruptor\FormComponents\Components\Forms\FormCheckbox;
 use schruptor\FormComponents\Components\Forms\FormGroup;
 use schruptor\FormComponents\Components\Forms\FormInput;
@@ -60,6 +61,7 @@ class FormComponentsServiceProvider extends PackageServiceProvider
         Blade::component('form-select-dropdown', SelectDropdown::class);
 
         Blade::component('btn-a-link', ALinkBtn::class);
+        Blade::component('rounded-btn', RoundedBtn::class);
 
         Blade::component('labels-simple-label', Label::class);
 
