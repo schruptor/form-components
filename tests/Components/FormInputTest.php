@@ -10,7 +10,7 @@ test('an input can be rendered', function () {
             'value' => 'Input test value',
             'type' => 'text',
             'placeholder' => 'value placeholder',
-            'required' => 'true'
+            'required' => 'true',
         ],
     );
 });
