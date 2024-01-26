@@ -1,6 +1,9 @@
-<input id="Input test"
-       required=""
-       type="text" class="form-control"
-       name="Input test"
-       value="Input test value"
-/>
+<input
+    id="Input test"
+    type="text"
+    name="Input test"
+    value="Input test value"
+    placeholder="value placeholder"
+            required
+        class="form-control"
+>
