@@ -8,9 +8,12 @@ use schruptor\FormComponents\FormComponents;
 class FormTextarea extends FormComponents
 {
     public function __construct(
-        public string $name,
-        public string $value,
-        public ?string $framework = null
+        public string $id,
+        public string $rows,
+        public string $description,
+        public string $TextareaValue,
+        public bool $required = false,
+        public ?string $framework = null,
     ) {
     }
 

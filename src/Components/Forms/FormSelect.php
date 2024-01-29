@@ -3,31 +3,16 @@
 namespace schruptor\FormComponents\Components\Forms;
 
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Arr;
 use schruptor\FormComponents\FormComponents;
 
 class FormSelect extends FormComponents
 {
     public function __construct(
         public string $name,
-        public string $label,
-        public $options,
-        public $selectedKey,
         public bool $multiple,
-        public bool $floating,
-        public string $placeholder,
+        public bool $required,
         public ?string $framework = null
     ) {
-    }
-
-    public function isSelected($key): bool
-    {
-        return in_array($key, Arr::wrap($this->selectedKey));
-    }
-
-    public function nothingSelected(): bool
-    {
-        return is_array($this->selectedKey) ? empty($this->selectedKey) : is_null($this->selectedKey);
     }
 
     public function render(): View

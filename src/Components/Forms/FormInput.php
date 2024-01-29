@@ -10,6 +10,7 @@ class FormInput extends FormComponents
     public function __construct(
         public string $type,
         public bool $required = false,
+        public ?string $dataType = '',
         public ?string $placeholder = '',
         public ?string $name = '',
         public ?string $value = '',
