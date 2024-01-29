@@ -9,7 +9,7 @@ test('a card can be rendered', function () {
             'icon' => 'card icon',
             'color' => 'red',
             'content' => 'test content',
-            'title' => 'test title'
+            'title' => 'test title',
         ],
     );
 });
