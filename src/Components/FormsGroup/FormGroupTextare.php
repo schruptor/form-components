@@ -1,16 +1,17 @@
 <?php
 
-namespace schruptor\FormComponents\Components\Forms;
+namespace schruptor\FormComponents\Components\FormsGroup;
 
 use Illuminate\Contracts\View\View;
 use schruptor\FormComponents\FormComponents;
 
-class FormTextarea extends FormComponents
+class FormGroupTextare extends FormComponents
 {
     public function __construct(
+        public string $label,
         public string $id,
-        public string $rows,
         public string $name,
+        public string $rows,
         public string $text,
         public ?bool $required = false,
         public ?string $framework = null,
@@ -19,6 +20,6 @@ class FormTextarea extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.'.$this->getFramework().'.forms.form-textarea');
+        return view('form-components::components.'.$this->getFramework().'.forms-group.form-group-textarea');
     }
 }

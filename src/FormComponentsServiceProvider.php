@@ -14,9 +14,13 @@ use schruptor\FormComponents\Components\Forms\FormLabel;
 use schruptor\FormComponents\Components\Forms\FormRow;
 use schruptor\FormComponents\Components\Forms\FormSelect;
 use schruptor\FormComponents\Components\Forms\FormSubmit;
+use schruptor\FormComponents\Components\Forms\FormTextarea;
+use schruptor\FormComponents\Components\Forms\FormToggle;
 use schruptor\FormComponents\Components\FormsGroup\Form;
 use schruptor\FormComponents\Components\FormsGroup\FormGroupInput;
 use schruptor\FormComponents\Components\FormsGroup\FormGroupSelect;
+use schruptor\FormComponents\Components\FormsGroup\FormGroupTextare;
+use schruptor\FormComponents\Components\FormsGroup\FormGroupToggle;
 use schruptor\FormComponents\Components\FormsGroup\Pos\ScanBar;
 use schruptor\FormComponents\Components\FormsGroup\SelectDropdown;
 use schruptor\FormComponents\Components\Labels\Label;
@@ -51,12 +55,16 @@ class FormComponentsServiceProvider extends PackageServiceProvider
         Blade::component('form-row', FormRow::class);
         Blade::component('form-submit', FormSubmit::class);
         Blade::component('form-select', FormSelect::class);
+        Blade::component('form-textarea', FormTextarea::class);
+        Blade::component('form-toggle', FormToggle::class);
 
         Blade::component('group-form', Form::class);
         Blade::component('forms-group-input', FormGroupInput::class);
         Blade::component('form-select-dropdown', SelectDropdown::class);
         Blade::component('form-scan-bar', ScanBar::class);
         Blade::component('form-group-select', FormGroupSelect::class);
+        Blade::component('form-group-textarea', FormGroupTextare::class);
+        Blade::component('form-group-toggle', FormGroupToggle::class);
 
         Blade::component('btn-a-link', ALinkBtn::class);
         Blade::component('rounded-btn', RoundedBtn::class);

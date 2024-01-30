@@ -9,8 +9,7 @@ class RoundedBtn extends FormComponents
 {
     public function __construct(
         public string $id,
-        public string $icon,
-        public string $text,
+        public ?string $icon = '',
         public ?string $framework = null
     ) {
     }
