@@ -1,9 +1,8 @@
 <textarea
     id="{{ $id }}"
-    {{ $attributes->merge(['class' => 'form-control']) }}
+    {{ $attributes->merge(['class' => 'resize-none border border-gray-300 bg-yellow-50 text-black w-full']) }}
     name="{{ $name }}"
     rows="{{ $rows }}"
-    style="resize: none;"
 
     @if($required)
         required
