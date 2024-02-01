@@ -10,7 +10,7 @@ test('a form toggle can be rendered', function () {
             'name' => 'name',
             'isActive' => true,
             'defaultYes' => 'yes',
-            'defaultNo' => 'no'
+            'defaultNo' => 'no',
         ],
     );
 });

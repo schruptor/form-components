@@ -11,7 +11,7 @@ test('a form group textarea can be rendered', function () {
             'name' => 'name',
             'rows' => 'rows',
             'required' => true,
-            'text' => 'text'
+            'text' => 'text',
         ],
     );
 });

@@ -9,7 +9,7 @@ test('a form textarea can be rendered', function () {
             'id' => 'id',
             'rows' => 'rows',
             'name' => 'name',
-            'text' => 'text'
+            'text' => 'text',
         ],
     );
 });
