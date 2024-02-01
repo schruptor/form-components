@@ -9,7 +9,7 @@ class SelectDropdown extends FormComponents
 {
     public function __construct(
         public string $label,
-        public string $icon,
+        public ?string $icon = '',
         public ?string $framework = null,
     ) {
     }

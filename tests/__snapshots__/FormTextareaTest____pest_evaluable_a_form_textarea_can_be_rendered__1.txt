@@ -1,0 +1,8 @@
+<textarea
+    class="form-control"
+    id="id"
+    name="name"
+    rows="rows"
+
+    >text
+</textarea>

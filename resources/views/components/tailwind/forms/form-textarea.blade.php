@@ -1,6 +1,6 @@
 <textarea
     id="{{ $id }}"
-    {{ $attributes->merge(['class' => 'resize-none border border-gray-300 bg-yellow-50 text-black w-full']) }}
+    {{ $attributes->merge(['class' => 'resize-none border border-gray-300 text-black w-full']) }}
     name="{{ $name }}"
     rows="{{ $rows }}"
 

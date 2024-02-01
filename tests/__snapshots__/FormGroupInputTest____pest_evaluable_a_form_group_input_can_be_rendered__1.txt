@@ -1,0 +1,15 @@
+<div class="form-group" id="">
+    <label>label</label>
+            <div class="input-icon icon-right">
+                            <input
+        class="form-control"
+        id="name"
+        type="type"
+        name="name"
+        value=""
+        placeholder=""
+
+            >
+                        <i class=" circular "></i>
+        </div>
+    </div>

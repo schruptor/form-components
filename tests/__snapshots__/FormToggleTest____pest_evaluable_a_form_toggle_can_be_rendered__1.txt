@@ -1,0 +1,7 @@
+<input
+    class="checkbox-slider slider-icon yesno colored-success"
+    type="checkbox"
+    id="id"
+    name="name"
+    data-on="yes" checked
+    data-off="no">

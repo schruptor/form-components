@@ -1,3 +1,4 @@
 <button id="roundedBtn" class="btn btn-lg btn-default shiny">
-    <i class="fa fa btn" style="font-size:18px;margin-right:2px;"></i> rounded button text
+            <i class="fa fa btn" style="font-size:18px;margin-right:2px;"></i>
+         
 </button>

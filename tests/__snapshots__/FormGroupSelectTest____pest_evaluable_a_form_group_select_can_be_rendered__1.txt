@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label>label</label>
+    <span class="input-icon icon-right">
+                    <select
+    class="form-control select2"
+    name="name"
+
+    
+    >
+   https://localhost
+</select>
+        
+                    <i class=" circular "></i>
+            </span>
+</div>

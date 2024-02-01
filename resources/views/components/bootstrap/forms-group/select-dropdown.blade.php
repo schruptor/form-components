@@ -3,9 +3,11 @@
 
     <div class="controls">
         <div class="input-group">
-            <span class="input-group-addon">
-                <i class="{{ $icon }}"></i>
-            </span>
+            @if(isset($icon))
+                <span class="input-group-addon">
+                    <i class="{{ $icon }}"></i>
+                </span>
+            @endif
             {{ $slot }}
         </div>
     </div>
