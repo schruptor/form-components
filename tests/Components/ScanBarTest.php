@@ -9,7 +9,7 @@ test('a scan bar can be rendered', function () {
             'icon' => 'icon',
             'type' => 'type',
             'id' => 'id',
-            'idHidden' => 'idHidden'
+            'idHidden' => 'idHidden',
         ],
     );
 });

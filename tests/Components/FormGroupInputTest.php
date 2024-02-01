@@ -8,7 +8,7 @@ test('a form group input can be rendered', function () {
         componentParameters: [
             'label' => 'label',
             'name' => 'name',
-            'type' => 'type'
+            'type' => 'type',
         ],
     );
 });
