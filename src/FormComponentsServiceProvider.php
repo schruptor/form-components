@@ -11,7 +11,6 @@ use schruptor\FormComponents\Components\Forms\FormCheckbox;
 use schruptor\FormComponents\Components\Forms\FormGroup;
 use schruptor\FormComponents\Components\Forms\FormInput;
 use schruptor\FormComponents\Components\Forms\FormLabel;
-use schruptor\FormComponents\Components\Forms\FormRow;
 use schruptor\FormComponents\Components\Forms\FormSelect;
 use schruptor\FormComponents\Components\Forms\FormSubmit;
 use schruptor\FormComponents\Components\Forms\FormTextarea;
@@ -52,7 +51,6 @@ class FormComponentsServiceProvider extends PackageServiceProvider
         Blade::component('form-group', FormGroup::class);
         Blade::component('form-input', FormInput::class);
         Blade::component('form-label', FormLabel::class);
-        Blade::component('form-row', FormRow::class);
         Blade::component('form-submit', FormSubmit::class);
         Blade::component('form-select', FormSelect::class);
         Blade::component('form-textarea', FormTextarea::class);
