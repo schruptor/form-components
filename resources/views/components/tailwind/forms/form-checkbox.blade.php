@@ -1,14 +1,8 @@
-<div class="flex flex-col">
-    <label class="flex items-center">
-        <input {!! $attributes !!}
-               type="checkbox"
-               value="{{ $value }}"
-               name="{{ $name }}"
-               @if($checked)
-                   checked="checked"
-               @endif
-        />
-
-        <span class="ml-2">{{ $label }}</span>
-    </label>
-</div>
+<label>
+    <input {!! $attributes->merge(['class' => '']) !!}
+           type="checkbox"
+           value="{{ $value }}"
+           name="{{ $name }}"
+           id="{{ $id }}"/>
+    <span class="text"></span>
+</label>

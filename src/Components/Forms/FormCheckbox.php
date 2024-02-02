@@ -8,10 +8,9 @@ use schruptor\FormComponents\FormComponents;
 class FormCheckbox extends FormComponents
 {
     public function __construct(
-        public bool $value,
-        public string $name,
-        public bool $checked = false,
-        public string $label = ' ',
+        public ?bool $value = false,
+        public ?string $name = '',
+        public ?string $id = '',
         public ?string $framework = null
     ) {
     }

@@ -1,12 +1,8 @@
-<div class="form-check">
-    <input {!! $attributes->merge(['class' => 'form-check-input']) !!}
+<label>
+    <input {!! $attributes->merge(['class' => '']) !!}
            type="checkbox"
            value="{{ $value }}"
            name="{{ $name }}"
-           id="{{ $name }}"
-
-           @if($checked)
-               checked="checked"
-           @endif
-    />
-</div>
+           id="{{ $id }}"/>
+    <span class="text"></span>
+</label>
