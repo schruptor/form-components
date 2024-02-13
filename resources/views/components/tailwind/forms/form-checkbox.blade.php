@@ -1,5 +1,5 @@
 <label>
-    <input {!! $attributes->merge(['class' => '']) !!}
+    <input {{ $attributes->merge(['class' => '']) }}
            type="checkbox"
            value="{{ $value }}"
            name="{{ $name }}"

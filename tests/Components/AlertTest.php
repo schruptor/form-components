@@ -1,10 +1,10 @@
 <?php
 
-use schruptor\FormComponents\Components\Badges\Badge;
+use schruptor\FormComponents\Components\Alerts\Alert;
 
-test('a badge can be rendered', function () {
+test('an alert can be rendered', function () {
     $this->assertComponentSnapshot(
-        class: Badge::class,
+        class: Alert::class,
         componentParameters: ['color' => 'danger', 'number' => '3', 'text' => 'badge text'],
     );
 });

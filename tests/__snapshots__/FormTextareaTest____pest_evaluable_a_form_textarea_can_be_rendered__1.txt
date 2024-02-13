@@ -4,5 +4,4 @@
     name="name"
     rows="rows"
 
-    >text
-</textarea>
+    >text</textarea>

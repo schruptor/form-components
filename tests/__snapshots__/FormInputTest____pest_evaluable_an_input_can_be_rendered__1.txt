@@ -1,10 +1,11 @@
 <input
-        class="form-control"
-        id="Input test"
-        type="text"
-        name="Input test"
-        value="Input test value"
-        placeholder="value placeholder"
+            class="form-control"
+    
+    type="text"
+    id="Input test"
+    name="Input test"
+    value="Input test value"
+    placeholder="value placeholder"
 
-                    required
-            >
+            required
+    >

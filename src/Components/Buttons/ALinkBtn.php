@@ -3,6 +3,7 @@
 namespace schruptor\FormComponents\Components\Buttons;
 
 use Illuminate\Contracts\View\View;
+use schruptor\FormComponents\Exceptions\FrameworkNotAvailable;
 use schruptor\FormComponents\FormComponents;
 
 class ALinkBtn extends FormComponents
@@ -13,6 +14,9 @@ class ALinkBtn extends FormComponents
     ) {
     }
 
+    /**
+     * @throws FrameworkNotAvailable
+     */
     public function render(): View
     {
         return view('form-components::components.'.$this->getFramework().'.buttons.a-link-btn');

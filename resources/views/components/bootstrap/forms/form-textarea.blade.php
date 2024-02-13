@@ -7,5 +7,4 @@
     @if($required)
         required
     @endif
->{{ $text }}
-</textarea>
+>{{ $text }}</textarea>

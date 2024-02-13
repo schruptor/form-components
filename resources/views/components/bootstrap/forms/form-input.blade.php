@@ -1,28 +1,18 @@
-@if(str_contains('file',$type))
-    <input
+<input
+    @if(str_contains('file',  $type))
         {{ $attributes->merge(['class' => '']) }}
-        id="{{ $name }}"
-        type="{{ $type }}"
-        name="{{ $name }}"
-        value="{{ $value }}"
-        placeholder="{{ $placeholder }}"
         accept="{{ $dataType }}"
-
-        @if($required)
-            required
-        @endif
-    >
-@else
-    <input
+    @else
         {{ $attributes->merge(['class' => 'form-control']) }}
-        id="{{ $name }}"
-        type="{{ $type }}"
-        name="{{ $name }}"
-        value="{{ $value }}"
-        placeholder="{{ $placeholder }}"
+    @endif
 
-        @if($required)
-            required
-        @endif
-    >
-@endif
+    type="{{ $type }}"
+    id="{{ $id }}"
+    name="{{ $name }}"
+    value="{{ $value }}"
+    placeholder="{{ $placeholder }}"
+
+    @if($required)
+        required
+    @endif
+>

@@ -2,15 +2,19 @@
 
 namespace schruptor\FormComponents;
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Blade;
-use schruptor\FormComponents\Components\Badges\Badge;
-use schruptor\FormComponents\Components\Badges\TableBadge;
+use Illuminate\Support\Traits\Macroable;
+use Illuminate\View\ComponentAttributeBag;
+use schruptor\FormComponents\Components\Alerts\Alert;
+use schruptor\FormComponents\Components\Alerts\TableAlert;
 use schruptor\FormComponents\Components\Buttons\ALinkBtn;
 use schruptor\FormComponents\Components\Buttons\RoundedBtn;
 use schruptor\FormComponents\Components\Forms\FormCheckbox;
 use schruptor\FormComponents\Components\Forms\FormGroup;
 use schruptor\FormComponents\Components\Forms\FormInput;
 use schruptor\FormComponents\Components\Forms\FormLabel;
+use schruptor\FormComponents\Components\Forms\FormOption;
 use schruptor\FormComponents\Components\Forms\FormSelect;
 use schruptor\FormComponents\Components\Forms\FormSubmit;
 use schruptor\FormComponents\Components\Forms\FormTextarea;
@@ -55,6 +59,7 @@ class FormComponentsServiceProvider extends PackageServiceProvider
         Blade::component('form-select', FormSelect::class);
         Blade::component('form-textarea', FormTextarea::class);
         Blade::component('form-toggle', FormToggle::class);
+        Blade::component('form-option', FormOption::class);
 
         Blade::component('group-form', Form::class);
         Blade::component('forms-group-input', FormGroupInput::class);
@@ -72,8 +77,8 @@ class FormComponentsServiceProvider extends PackageServiceProvider
         Blade::component('widget-default-header', DefaultHeader::class);
         Blade::component('widget-card', Card::class);
 
-        Blade::component('default-badge', Badge::class);
-        Blade::component('table-badge', TableBadge::class);
+        Blade::component('default-badge', Alert::class);
+        Blade::component('table-badge', TableAlert::class);
 
         Blade::component('partials-table-header', TableHeader::class);
         Blade::component('partials-td-element', TdElement::class);

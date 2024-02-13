@@ -1,11 +1,11 @@
 <?php
 
-namespace schruptor\FormComponents\Components\Badges;
+namespace schruptor\FormComponents\Components\Alerts;
 
 use Illuminate\Contracts\View\View;
 use schruptor\FormComponents\FormComponents;
 
-class TableBadge extends FormComponents
+class TableAlert extends FormComponents
 {
     public function __construct(
         public bool $canScan,
@@ -15,6 +15,6 @@ class TableBadge extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.'.$this->getFramework().'.badges.table-badge');
+        return view('form-components::components.'.$this->getFramework().'.alerts.table-alert');
     }
 }

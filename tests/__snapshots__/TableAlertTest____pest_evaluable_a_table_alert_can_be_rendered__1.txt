@@ -1,0 +1,4 @@
+<div class="">
+            Bitte wählen oder scannen Sie einen Artikel...
+    </div>
+

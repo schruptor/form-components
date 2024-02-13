@@ -1,11 +1,11 @@
 <?php
 
-namespace schruptor\FormComponents\Components\Badges;
+namespace schruptor\FormComponents\Components\Alerts;
 
 use Illuminate\Contracts\View\View;
 use schruptor\FormComponents\FormComponents;
 
-class Badge extends FormComponents
+class Alert extends FormComponents
 {
     public function __construct(
         public string $color,
@@ -17,6 +17,6 @@ class Badge extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.'.$this->getFramework().'.badges.badge');
+        return view('form-components::components.'.$this->getFramework().'.alerts.alert');
     }
 }

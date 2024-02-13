@@ -10,5 +10,11 @@
         required
     @endif
 >
-   {{ $slot }}
+    @if($options)
+        @foreach($options as $option)
+            <x-form-option :key="$option['key']" :value="$option['value']" :selected="$option['selected']">{{ $option['description'] }}</x-form-option>
+        @endforeach
+    @else
+        {{ $slot }}
+    @endif
 </select>

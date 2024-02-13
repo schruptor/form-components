@@ -7,6 +7,5 @@
     rows="rows"
 
             required
-    >text
-</textarea>
+    >text</textarea>
 </div>
