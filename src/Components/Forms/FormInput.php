@@ -3,7 +3,6 @@
 namespace schruptor\FormComponents\Components\Forms;
 
 use Illuminate\Contracts\View\View;
-use Illuminate\Validation\Validator;
 use schruptor\FormComponents\Exceptions\FrameworkNotAvailable;
 use schruptor\FormComponents\FormComponents;
 
