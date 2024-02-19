@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'form-group']) }}>
+<x-form-group {{ $attributes->merge(['class' => 'form-group']) }} id="{{ $groupName }}">
     <x-form-label label="{{ $label }}"></x-form-label>
 
     <div class="controls">
@@ -11,4 +11,4 @@
             {{ $slot }}
         </div>
     </div>
-</div>
+</x-form-group>

@@ -1,4 +1,4 @@
-<div class="form-group" id="">
+<div class="form-group" id="" id="">
     <label>label</label>
             <div class="input-icon icon-right">
                             <input
@@ -13,4 +13,4 @@
     >
                         <i class=" circular "></i>
         </div>
-    </div>
+</div>

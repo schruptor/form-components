@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'form-group']) }}>
+<x-form-group {{ $attributes->merge(['class' => 'form-group']) }} id="{{ $groupName }}">
     <x-form-label label="{{ $label }}"></x-form-label>
     <x-form-textarea
         id="{{ $id }}"
@@ -8,4 +8,4 @@
         style="resize: none;"
         text="{{ $text }}"
     />
-</div>
+</x-form-group>

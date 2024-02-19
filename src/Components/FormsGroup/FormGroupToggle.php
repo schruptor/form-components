@@ -14,6 +14,7 @@ class FormGroupToggle extends FormComponents
         public string $defaultYes,
         public string $defaultNo,
         public bool $isActive,
+        public ?string $groupName = '',
         public ?string $framework = null,
     ) {
     }

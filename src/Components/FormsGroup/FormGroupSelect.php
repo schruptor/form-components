@@ -10,6 +10,7 @@ class FormGroupSelect extends FormComponents
     public function __construct(
         public string $label,
         public string $name,
+        public ?string $groupName = '',
         public ?string $icon = '',
         public ?string $color = '',
         public ?bool $multiple = false,

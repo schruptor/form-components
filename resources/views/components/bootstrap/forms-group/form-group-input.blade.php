@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'form-group']) }} id="{{ $groupName }}">
+<x-form-group {{ $attributes->merge(['class' => 'form-group']) }} id="{{ $groupName }}">
     <x-form-label label="{{ $label }}"></x-form-label>
     @if(isset($icon))
         <div class="input-icon icon-right">
@@ -42,4 +42,4 @@
             />
         @endif
     @endif
-</div>
+</x-form-group>

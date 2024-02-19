@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'form-group']) }}>
+<x-form-group {{ $attributes->merge(['class' => 'form-group']) }} id="{{ $groupName }}">
     <x-form-label label="{{ $label }}"></x-form-label>
     <br>
     <label class="position-relative checkbox-label" style="line-height:15px;">
@@ -11,4 +11,4 @@
         />
         <span class="text"></span>
     </label>
-</div>
+</x-form-group>

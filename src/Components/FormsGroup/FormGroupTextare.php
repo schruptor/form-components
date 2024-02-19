@@ -13,6 +13,7 @@ class FormGroupTextare extends FormComponents
         public string $name,
         public string $rows,
         public string $text,
+        public ?string $groupName = '',
         public ?bool $required = false,
         public ?string $framework = null,
     ) {

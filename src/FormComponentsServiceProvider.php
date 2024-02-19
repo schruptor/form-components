@@ -77,8 +77,8 @@ class FormComponentsServiceProvider extends PackageServiceProvider
         Blade::component('widget-default-header', DefaultHeader::class);
         Blade::component('widget-card', Card::class);
 
-        Blade::component('default-badge', Alert::class);
-        Blade::component('table-badge', TableAlert::class);
+        Blade::component('default-alert', Alert::class);
+        Blade::component('table-alert', TableAlert::class);
 
         Blade::component('partials-table-header', TableHeader::class);
         Blade::component('partials-td-element', TdElement::class);
