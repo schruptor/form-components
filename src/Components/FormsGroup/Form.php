@@ -8,6 +8,7 @@ use schruptor\FormComponents\FormComponents;
 class Form extends FormComponents
 {
     public bool $isSpoofed = false;
+
     public string $realMethod = 'POST';
 
     public function __construct(
