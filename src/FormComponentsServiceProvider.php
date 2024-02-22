@@ -22,7 +22,7 @@ use schruptor\FormComponents\Components\FormsGroup\FormGroupSelect;
 use schruptor\FormComponents\Components\FormsGroup\FormGroupTextare;
 use schruptor\FormComponents\Components\FormsGroup\FormGroupToggle;
 use schruptor\FormComponents\Components\FormsGroup\Pos\ScanBar;
-use schruptor\FormComponents\Components\FormsGroup\SelectDropdown;
+use schruptor\FormComponents\Components\FormsGroup\FormGroupSelectDropdown;
 use schruptor\FormComponents\Components\Labels\Label;
 use schruptor\FormComponents\Components\Tables\Partials\TableHeader;
 use schruptor\FormComponents\Components\Tables\Partials\TdElement;
@@ -60,7 +60,7 @@ class FormComponentsServiceProvider extends PackageServiceProvider
 
         Blade::component('group-form', Form::class);
         Blade::component('forms-group-input', FormGroupInput::class);
-        Blade::component('form-select-dropdown', SelectDropdown::class);
+        Blade::component('form-group-select-dropdown', FormGroupSelectDropdown::class);
         Blade::component('form-scan-bar', ScanBar::class);
         Blade::component('form-group-select', FormGroupSelect::class);
         Blade::component('form-group-textarea', FormGroupTextare::class);

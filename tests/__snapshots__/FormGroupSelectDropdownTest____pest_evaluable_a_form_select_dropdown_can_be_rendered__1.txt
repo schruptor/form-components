@@ -1,0 +1,12 @@
+<div class="form-group" id="" id="">
+    <label>label</label>
+
+    <div class="controls">
+        <div class="input-group">
+                            <span class="input-group-addon">
+                    <i class="icon"></i>
+                </span>
+                        https://localhost
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-<x-form-group {{ $attributes->merge(['class' => 'form-group']) }} id="{{ $groupName }}">
+<x-form-group {{ $attributes->merge(['class' => '']) }} id="{{ $groupName }}">
     <x-form-label label="{{ $label }}"></x-form-label>
 
     <div class="controls">

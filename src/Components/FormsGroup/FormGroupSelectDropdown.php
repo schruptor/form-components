@@ -5,7 +5,7 @@ namespace schruptor\FormComponents\Components\FormsGroup;
 use Illuminate\Contracts\View\View;
 use schruptor\FormComponents\FormComponents;
 
-class SelectDropdown extends FormComponents
+class FormGroupSelectDropdown extends FormComponents
 {
     public function __construct(
         public string $label,
@@ -18,6 +18,6 @@ class SelectDropdown extends FormComponents
 
     public function render(): View
     {
-        return view('form-components::components.'.$this->getFramework().'.forms-group.select-dropdown');
+        return view('form-components::components.'.$this->getFramework().'.forms-group.form-group-select-dropdown');
     }
 }
