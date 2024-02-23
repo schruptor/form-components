@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Blade;
 use schruptor\FormComponents\Components\Alerts\Alert;
 use schruptor\FormComponents\Components\Alerts\TableAlert;
 use schruptor\FormComponents\Components\Buttons\ALinkBtn;
+use schruptor\FormComponents\Components\Buttons\DefaultBtn;
 use schruptor\FormComponents\Components\Buttons\RoundedBtn;
 use schruptor\FormComponents\Components\Forms\FormCheckbox;
 use schruptor\FormComponents\Components\Forms\FormGroup;
@@ -68,6 +69,7 @@ class FormComponentsServiceProvider extends PackageServiceProvider
 
         Blade::component('btn-a-link', ALinkBtn::class);
         Blade::component('rounded-btn', RoundedBtn::class);
+        Blade::component('default-btn', DefaultBtn::class);
 
         Blade::component('labels-simple-label', Label::class);
 
