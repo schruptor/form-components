@@ -11,9 +11,7 @@
     @endif
 >
     @if($options)
-        @foreach($options as $option)
-            <x-form-option :key="$option['key']" :value="$option['value']" :selected="$option['selected']">{{ $option['description'] }}</x-form-option>
-        @endforeach
+        <x-form-option :options="$options"></x-form-option>
     @else
         {{ $slot }}
     @endif

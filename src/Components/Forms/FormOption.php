@@ -8,7 +8,7 @@ use schruptor\FormComponents\FormComponents;
 class FormOption extends FormComponents
 {
     public function __construct(
-        public array $option,
+        public array $options,
         public ?string $framework = null
     ) {
     }
