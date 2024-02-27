@@ -1,0 +1,8 @@
+<textarea id="Text area test"
+          required=""
+          class="form-control"
+          name="Text area test"
+          rows="6"
+          style="resize: none;">
+    Text area test
+</textarea>

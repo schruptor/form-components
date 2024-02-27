@@ -1,0 +1,9 @@
+<div class="widget">
+            <div class="widget-header bordered-bottom">
+                            <i class="widget-icon card icon"></i>
+                                        <span class="widget-caption">test title</span>
+                    </div>
+    
+    https://localhost
+
+</div>

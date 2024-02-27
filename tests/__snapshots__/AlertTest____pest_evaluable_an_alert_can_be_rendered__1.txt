@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-lg-6">
+        <div class="alert alert-danger fade in radius-bordered alert-shadowed" style="font-weight:600;">
+                            <span class="badge badge-danger margin-right-5" style="font-weight:bold!important;">3</span>
+            
+            badge text
+        </div>
+    </div>
+</div>

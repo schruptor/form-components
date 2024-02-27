@@ -1,0 +1,8 @@
+<label>
+    <input class=""
+           type="checkbox"
+           value="1"
+           name="Checkbox test"
+           id=""/>
+    <span class="text"></span>
+</label>

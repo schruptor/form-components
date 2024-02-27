@@ -1,0 +1,13 @@
+<div class="col-xs-12 col-sm-3 col-lg-3">
+    <div class="databox databox-lg radius-bordered databox-shadowed no-margin">
+        <div class="databox-left bg-white">
+            <i class="card icon red" aria-hidden="true"></i>
+        </div>
+        <div class="databox-right bordered-thick bordered-red bg-white">
+            <span class="databox-number red">test content</span>
+            <div class="databox-text darkgray">
+                test title
+            </div>
+        </div>
+    </div>
+</div>

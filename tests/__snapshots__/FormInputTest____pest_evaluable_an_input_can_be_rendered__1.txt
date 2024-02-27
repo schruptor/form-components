@@ -1,0 +1,11 @@
+<input
+            class="form-control"
+    
+    type="text"
+    id="Input test"
+    name="Input test"
+    value="Input test value"
+    placeholder="value placeholder"
+
+            required
+    >

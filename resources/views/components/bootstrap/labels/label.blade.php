@@ -1,0 +1,1 @@
+<p {!! $attributes !!}>{{ $label }}</p>

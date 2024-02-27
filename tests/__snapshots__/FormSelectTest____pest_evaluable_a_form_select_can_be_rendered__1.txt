@@ -1,0 +1,10 @@
+<select
+    class="form-control select2"
+    name="name"
+
+            multiple
+    
+            required
+    >
+            https://localhost
+    </select>
